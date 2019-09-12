@@ -1,7 +1,7 @@
 {% set name = "pytest-variables" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7808b77b643b9f8a24f1ee1c32132648b1c62ab93956f20fe101dde66db6d09a" %}
+{% set hash = "a475fe559bf3a1cfce5a603f7b4112415e7a76716c99394c088f788f75cd276a" %}
 
 
 package:
@@ -15,7 +15,7 @@ source:
 
 build:
     noarch: python
-    number: 1
+    number: 0
     script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
