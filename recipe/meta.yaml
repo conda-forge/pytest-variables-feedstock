@@ -1,7 +1,6 @@
 {% set name = "pytest-variables" %}
-{% set version = "1.7.1" %}
-{% set hash_type = "sha256" %}
-{% set hash = "7808b77b643b9f8a24f1ee1c32132648b1c62ab93956f20fe101dde66db6d09a" %}
+{% set version = "2.0.0" %}
+{% set hash = "1c9e4fc321e33be7d1b352ac9cf20fdd2c39a8e4e6fa2dcd042aaf70ed516be7" %}
 
 
 package:
@@ -11,12 +10,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
-    noarch: python
-    number: 1
-    script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -40,7 +39,7 @@ about:
   license: MPL 2.0
   license_family: OTHER
   license_file: LICENSE
-  summary: 'pytest plugin for providing variables to tests/fixtures'
+  summary: pytest plugin for providing variables to tests/fixtures
 
 extra:
   recipe-maintainers:
