@@ -1,11 +1,11 @@
-About pytest-variables
-======================
+About pytest-variables-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-variables-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytest-dev/pytest-variables
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-variables-feedstock/blob/main/LICENSE.txt)
 
 Summary: pytest plugin for providing variables to tests/fixtures
 
@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@birdsarah](https://github.com/birdsarah/)
 * [@davehunt](https://github.com/davehunt/)
+* [@nicoddemus](https://github.com/nicoddemus/)
 
