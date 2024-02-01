@@ -1,5 +1,5 @@
 {% set name = "pytest-variables" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ab84235417afac5a0a7dd4c3918287d9c7329d2e16d570d6e943f8d8e02533b9
+  sha256: 4719b07f0f6e5d07829b19284a99d9159543a2e0336311f7bc4ee3b1617f595d
 
 build:
   noarch: python
